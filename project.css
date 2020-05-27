@@ -1,0 +1,287 @@
+@import url("national-cancer-institute-N_aihp118p8-unsplash.jpg");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header-3 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-3.fixed .text {
+  background-attachment: fixed;
+}
+
+.header-3 .text {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15vmin;
+  font-weight: 900;
+  background-image: url("chris-malinao-burgett-ZgRhrpMNp1g-unsplash.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  -webkit-animation: header-3-title .6s;
+          animation: header-3-title .6s;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 721px) {
+  .header-3 .text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .header-3 .text {
+    width: 95%;
+  }
+}
+
+.header-3 .text p {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  color: black;
+  -webkit-animation: header-3-more 1s;
+          animation: header-3-more 1s;
+}
+
+@media screen and (min-width: 1281px) {
+  .header-3 .text p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 721px) {
+  .header-3 .text p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .header-3 .text p {
+    font-size: 18px;
+  }
+}
+
+.header-3 .text p::before {
+  content: '- ';
+}
+
+.header-3 .text p::after {
+  content: ' -';
+}
+
+@-webkit-keyframes header-3-title {
+  0% {
+    top: 20vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes header-3-title {
+  0% {
+    top: 20vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes header-3-more {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 10vh;
+  }
+}
+
+@keyframes header-3-more {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 10vh;
+  }
+}
+
+.footer-1 {
+  height: 70vh;
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  background-color: #141414;
+  background-image: url("chris-malinao-burgett-ZgRhrpMNp1g-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer-1::before {
+  content: '';
+  width: 22vw;
+  min-width: 300px;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(34, 34, 34, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.footer-1 .menu {
+  position: absolute;
+  color: white;
+  top: 10%;
+  left: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.footer-1 .menu h1 {
+  letter-spacing: 4px;
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.footer-1 .menu a {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: none;
+}
+
+.footer-1 .menu a:nth-child(1) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(2) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(3) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(4) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(5) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(6) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(7) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(8) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(9) {
+  display: block;
+}
+
+.footer-1 .menu a:nth-child(10) {
+  display: block;
+}
+
+.footer-1 .cppyright {
+  position: absolute;
+  color: white !important;
+  bottom: 4%;
+  left: 2%;
+  font-size: 15px;
+  width: 30%;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 721px) {
+  .footer-1 .cppyright {
+    left: auto !important;
+    right: 2vw !important;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .footer-1 .cppyright {
+    left: auto;
+    right: 2vw;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+/*# sourceMappingURL=project.css.map */

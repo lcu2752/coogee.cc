@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.test {
+  height: 1000vh;
+}
+
+.tops {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  background-color: #111111;
+  color: white !important;
+  padding: 2vmin;
+  height: 7vmin;
+  width: 7vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tops ::-moz-selection {
+  background-color: transparent;
+}
+
+.tops ::selection {
+  background-color: transparent;
+}
+
+.tops::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  border-radius: 100%;
+  background-color: #111111;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.tops .material-icons {
+  z-index: 100000;
+}
+
+.tops:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: #272727;
+}
+
+.header {
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 0 10vmin;
+}
+
+.header .btn-outline {
+  margin-right: auto;
+  margin-top: 0;
+  margin-left: 1vmin;
+}
+
+.header h1 {
+  font-size: 10vmin;
+  text-transform: uppercase;
+  margin: 1vmin 0;
+  font-weight: 900;
+}
+
+.header p {
+  font-size: 3vmin;
+  margin: 1vmin;
+  font-weight: 700;
+}
+
+.btn-outline {
+  height: 2vmin;
+  color: white;
+  border: white solid 1px;
+  padding: 10px 25px;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  display: inline-block;
+  -webkit-transition: .4s;
+  transition: .4s;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.btn-outline .text {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-outline:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-outline:hover .text {
+  color: transparent;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: .0;
+}
+
+.btn-outline:hover .material-icons {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.btn-outline .material-icons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+  opacity: .0;
+}
+/*# sourceMappingURL=style.css.map */
